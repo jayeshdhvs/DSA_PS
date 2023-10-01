@@ -27,4 +27,4 @@ jobs:
     - name: Run best practice checks
       run: |
         pip install pylint
-        pylint . --exclude=__init__.py
+        pylint --rcfile .pylintrc .
