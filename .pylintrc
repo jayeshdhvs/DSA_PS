@@ -1,2 +1,2 @@
 [MASTER]
-exclude=__init__.py
+exclude-protected=__init__.py
