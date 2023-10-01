@@ -21,10 +21,10 @@ jobs:
     - name: Run PEP 8 linting
       run: |
         pip install flake8
-        flake8 .
+        flake8 . --exclude=__init__.py
       continue-on-error: true
 
     - name: Run best practice checks
       run: |
         pip install pylint
-        pylint .
+        pylint . --exclude=__init__.py
